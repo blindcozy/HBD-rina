@@ -53,7 +53,7 @@
                 </div>
             </header>
         <?php } else { ?>
-            <header class="tm-header" uk-header uk-inverse="target: .uk-navbar-container, .tm-headerbar; sel-active: .uk-navbar-transparent, .tm-headerbar">
+            <header class="tm-header tm-header-overlay" uk-header uk-inverse="target: .uk-navbar-container, .tm-headerbar; sel-active: .uk-navbar-transparent, .tm-headerbar">
                 <div uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container" cls-inactive="uk-navbar-transparent" tm-section-start>
                     <div class="uk-navbar-container uk-navbar-transparent uk-dark">
                         <div class="uk-container uk-container-expand">
@@ -86,8 +86,14 @@
                                     <img src="/images/home-hero-left.svg" width="800" height="750" class="el-image" loading="eager" />
                                 </div>
                                 <!-- Top Content -->
-                                 <div class="uk-panel uk-position-relative uk-text-center" uk-scrollspy-class>
-                                    <img class="uk-width-1-1 uk-width-2-3@m" src="images/logo.svg" loading="eager" />
+                                 <div class="uk-panel uk-position-relative" uk-scrollspy-class>
+                                    <div class="uk-width-1-1 uk-text-center">
+                                        <img class="uk-width-1-1 uk-width-1-2@m" src="images/logo.svg" loading="eager" />
+                                    </div>
+                                    <blockquote class="uk-margin">
+                                        <p class="uk-text-center uk-text-large">Semoga mama sehat selalu, lancar rejekinya, dimudahkan semua urusan, dan semakin sayang keluarga</p>
+                                        <footer class="uk-text-center">Bapak dan Nalla</footer>
+                                    </blockquote>
                                  </div>
                                 <!-- Right Illustration -->
                                 <div class="uk-position-absolute uk-width-1-1 uk-text-right" id="page#1" uk-parallax="y: 4vh,-10vh; easing: 0.5" style="right: -20vw; bottom: -24vh; z-index: 0; transform: translateY(4vh); will-change: transform;">
@@ -104,13 +110,14 @@
                     <div class="uk-container uk-container-xlarge">
                         <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-margin-xlarge uk-margin-remove-top">
                             <div class="uk-width-1-1">
-                                <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-match" uk-grid>
-                                    <div>
-                                        <canvas height="400"></canvas>
-                                    </div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
+                                <div class="uk-child-width-1-2 uk-child-width-1-4@m" uk-grid="masonry: pack"  uk-lightbox="animation: fade">
+                                    <?php foreach ($galleries as $gallery) { ?>
+                                        <div>
+                                            <a href="images/gallery/<?=$gallery?>">
+                                                <img src="images/gallery/<?=$gallery?>" />
+                                            </a>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
