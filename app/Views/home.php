@@ -90,10 +90,6 @@
                                     <div class="uk-width-1-1 uk-text-center">
                                         <img class="uk-width-1-1 uk-width-1-2@m" src="images/logo.svg" loading="eager" />
                                     </div>
-                                    <blockquote class="uk-margin">
-                                        <p class="uk-text-center uk-text-large">Semoga mama sehat selalu, lancar rejekinya, dimudahkan semua urusan, dan semakin sayang keluarga</p>
-                                        <footer class="uk-text-center">Bapak dan Nalla</footer>
-                                    </blockquote>
                                  </div>
                                 <!-- Right Illustration -->
                                 <div class="uk-position-absolute uk-width-1-1 uk-text-right" id="page#1" uk-parallax="y: 4vh,-10vh; easing: 0.5" style="right: -20vw; bottom: -24vh; z-index: 0; transform: translateY(4vh); will-change: transform;">
@@ -107,7 +103,17 @@
             <!-- Bottom Section -->
             <section class="uk-section-muted" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-bottom-small; delay: false;">
                 <div data-src="/images/bottom-bg.svg" uk-img class="uk-background-norepeat uk-background-contain uk-background-bottom-left uk-section uk-section-xlarge" uk-parallax="bgx: -120,-120; bgy: 420,120; easing: 0.5" style="will-change: background-position-x, background-position-y; background-image: url(&quot;https://demo.yootheme.com/demo/design-bites/images/bottom-bg.svg&quot;); background-position: calc(-120px) calc(100% + 405.367px);">
-                    <div class="uk-container uk-container-xlarge">
+                <div class="uk-container uk-container-small">
+                    <div class="uk-width-1-1 uk-flex uk-flex-center">
+                        <div class="uk-width-1-2@m">                                                    
+                            <blockquote class="uk-margin-large">
+                                Semoga mama sehat selalu, lancar rejekinya, dimudahkan semua urusan, dan semakin sayang keluarga
+                                <footer>Bapak dan Nalla</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>    
+                <div class="uk-container uk-container-xlarge">
                         <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-margin-xlarge uk-margin-remove-top">
                             <div class="uk-width-1-1">
                                 <div class="uk-child-width-1-2 uk-child-width-1-4@m" uk-grid="masonry: pack"  uk-lightbox="animation: fade">
@@ -125,6 +131,11 @@
                 </div>
             </section>
         </main>
+        <footer class="uk-section uk-section-small">
+            <div class="uk-container uk-container-expand">
+                <div class="uk-text-right uk-text-meta">&copy; 2025. Your Beloved Husband and Daughter</div>
+            </div>
+        </footer>
     </div>
 </body>
 
