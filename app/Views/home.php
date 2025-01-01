@@ -101,7 +101,7 @@
                 </div>
             </section>
             <!-- Bottom Section -->
-            <section class="uk-section-muted" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-bottom-small; delay: false;">
+            <section class="uk-section-muted" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-bottom-small; delay: false;" style="z-index:3;">
                 <div data-src="/images/bottom-bg.svg" uk-img class="uk-background-norepeat uk-background-contain uk-background-bottom-left uk-section uk-section-xlarge" uk-parallax="bgx: -120,-120; bgy: 420,120; easing: 0.5" style="will-change: background-position-x, background-position-y; background-image: url(&quot;https://demo.yootheme.com/demo/design-bites/images/bottom-bg.svg&quot;); background-position: calc(-120px) calc(100% + 405.367px);">
                 <div class="uk-container uk-container-small">
                     <div class="uk-width-1-1 uk-flex uk-flex-center">
