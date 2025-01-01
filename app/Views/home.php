@@ -131,9 +131,17 @@
                 </div>
             </section>
         </main>
+        <!-- Footer -->
+        <?php
+        if ($ismobile) {
+            $text = 'uk-text-center';
+        } else {
+            $text = 'uk-text-right';
+        }
+        ?>
         <footer class="uk-section uk-section-small">
             <div class="uk-container uk-container-expand">
-                <div class="uk-text-right uk-text-meta">&copy; 2025. Your Beloved Husband and Daughter</div>
+                <div class="<?=$text?> uk-text-meta">&copy; Copyright 2025. Your Beloved Husband and Daughter</div>
             </div>
         </footer>
     </div>
